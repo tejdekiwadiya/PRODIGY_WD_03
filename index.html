@@ -9,14 +9,18 @@
 
 <body>
     <div class="calculator">
-        <div class="title">Calculator</div>
         <div class="bar">
-            <input type="text" name="result" id="result" class="result">
+            <div class="title">Calculator</div>
+            <button type="button" id="button_h" class="button_style">H</button>
+        </div>
+        <div class="bar">
+            <input type="text" readonly name="result" id="result" class="result">
         </div>
 
         <div class="button">
             <div class="row">
-                <button type="button" id="clear" class="clear">Clear</button>
+                <button type="button" id="clear" class="button-digit">C</button>
+                <button type="button" id="delete" class="button-digit">DE</button>
                 <button type="button" id="" class="button-digit" onclick="result.value += '%'">%</button>
                 <button type="button" id="" class="button-digit" onclick="result.value += '/'">&#247;</button>
             </div>
@@ -48,6 +52,15 @@
                 <button type="button" id="equal" class="button-digit">=</button>
             </div>
         </div>
+    </div>
+
+
+    <div class="history" id="history_con">
+        <div class="bar">
+            <div class="history_title">History</div>
+            <button type="button" id="button_c" class="button_style">C</button>
+        </div>
+        <div id="history" class="scroll"></div>
     </div>
 
     <!-- JavaScript-->
