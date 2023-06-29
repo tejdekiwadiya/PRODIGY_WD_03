@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+:root {
+    --light-blur: #00adef;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    font-family: 'Orbitron', sans-serif;
+    list-style-type: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    display: block;
+    max-width: 350px;
+    margin: auto;
+    padding: 3rem;
+    background-color: black;
+}
+
+.calculator {
+    box-shadow: 0px 0px 40px -6px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: inline-block;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    border: 3px solid var(--light-blur);
+}
+
+.title {
+    font-size: 30px;
+    color: var(--white);
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.result {
+    font-weight: bolder;
+    letter-spacing: 0.5rem;
+    font-size: 25px;
+    color: var(--light-blur);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 1rem;
+    width: 18rem;
+    border-radius: 0.4rem;
+    border: 0px var(--white);
+}
+
+.clear {
+    color: var(--white);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 9.5rem;
+    justify-content: center;
+    border: 0px var(--white);
+    border-radius: 0.4rem;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(11px);
+    border-radius: 10px;
+    transition: 0.3s all ease-in-out;
+}
+
+.button {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+}
+
+.row {
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 0.625rem;
+    display: flex;
+    gap: 0.625rem;
+
+}
+
+.button-digit {
+    color: var(--white);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    height: 4.5rem;
+    width: 4.5rem;
+    justify-content: center;
+    border: 0px var(--white);
+    border-radius: 0.4rem;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(11px);
+    border-radius: 10px;
+    transition: 0.3s all ease-in-out;
+}
+
+/* Hover */
+.button-digit:hover,
+.clear:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--light-blur);
+}
