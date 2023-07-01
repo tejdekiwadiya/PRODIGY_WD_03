@@ -29,7 +29,6 @@ function history_ans() {
     history.setAttribute('id', 'history_list')
     history.innerHTML = result.value.toString()
     document.getElementById("history").appendChild(history)
-
 }
 equal.addEventListener('click', history_ans)
 equal.addEventListener('click', result_ans)
@@ -46,7 +45,6 @@ function dele() {
 }
 delet.addEventListener('click', dele)
 
-
 //History Clear
 function history_clear() {
     while (document.getElementById("history").firstChild) {
@@ -54,7 +52,6 @@ function history_clear() {
     }
 }
 clearbtn_history.addEventListener('click', history_clear)
-
 
 //Histoy Show/Hide
 function S_H() {
