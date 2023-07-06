@@ -1,0 +1,3 @@
+# Simple Calculator
+Description:
+The Simple Calculator project is a user-friendly web application created using JavaScript, HTML, and CSS. It provides a basic calculator functionality for performing arithmetic calculations. Users can input numbers and perform operations such as addition, subtraction, multiplication, and division. The calculator instantly displays the result, allowing for quick and convenient calculations. With a clean and intuitive interface, the project ensures a seamless user experience. Leveraging the power of JavaScript, HTML, and CSS, the Simple Calculator project offers a practical tool for performing simple calculations on the web.
